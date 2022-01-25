@@ -14,6 +14,7 @@ This structure can save more than 50% of space in cases where URLs share a lot o
 Time complexity of AVL trees insert, search and deletion operations is O(log n)
 Space complexity is O(n).
   
+Test was perfrmed on bbc.com urls taken from the following kaggle page https://www.kaggle.com/eliasdabbas/news-sitemaps
 
 
 ## References
