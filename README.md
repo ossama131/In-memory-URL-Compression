@@ -9,6 +9,8 @@ URLs contain a lot of redundant information, like scheme, domain name, some quer
 
 Implement AVL tree data structure (https://en.wikipedia.org/wiki/AVL_tree) to make insert search, and deletion for URLs easy and fast.
 
+This structure can save more than 50% of space in cases where URLs share a lot of redundant information, especially if they are from the same host.
+
 Time complexity of AVL trees insert, search and deletion operations is O(log n)
 Space complexity is O(n).
   
