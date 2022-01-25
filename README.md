@@ -2,7 +2,7 @@
 
 Implementation of the In-memory url compression approach discussed in the research paper [[1]](#1). The main purpose for implementation is to test this structure while doing a broad crawling and handling huge amount of urls.
 
-###Main idea:
+### Main idea:
 URLs contain a lot of redundant information, like scheme, domain name, some query parameters, especially if we are handling many urls from the same source:
   - Usage of Delta encoding (https://en.wikipedia.org/wiki/Delta_encoding) would save a lot of space, by only saving the difference of the new inserted URL compared    to the previous one.
   - Limitation of delta encoding: URLs need to be sorted first, then compressed. After having a compressed data, inserting a new URL, requires to sort all data again ==> AVL tree data structure come into rescue.
